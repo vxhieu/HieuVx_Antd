@@ -2,12 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import Counter from './Todos';
 import reportWebVitals from './reportWebVitals';
-
+import DataUser from './useReducer';
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const initialCount = 1;
 root.render(
   <React.StrictMode>
     <App />
+    <Counter initialCount={initialCount} />
+    <DataUser/>
   </React.StrictMode>
 );
 
